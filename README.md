@@ -1,2 +1,3 @@
-# School-Food-Menu
-School Food Menu project
+# Portfolio
+
+Follow the style of canva 
