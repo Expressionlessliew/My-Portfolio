@@ -12,7 +12,6 @@
   background-image: url(https://i.gifer.com/82em.gif);
   background-position:center;
   background-repeat:no-repeat;
-  background-size 80%;
   color: #fff;;
   padding:0 8%;
 }
@@ -22,6 +21,28 @@ nav{
     align-items: center;
     justify-content: space-between;
     padding:20px 0;
+}
+
+nav ul li a{
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+}
+nav ul li a:hover{
+  color: #fd4766;
+}
+nav ul li a:after{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #fd4766;
+  transition: .3s;
+  bottom: 0;
+}
+nav ul li a:hover:after{
+  width: 100%;
 }
 
 .logo{
