@@ -10,74 +10,87 @@
   width: 100%;
   background-color: black;
   background-image: url(https://i.gifer.com/82em.gif);
-  background-position:center;
-  background-repeat:no-repeat;
-  color: #fff;;
-  padding:0 8%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  padding: 0 8%;
 }
 
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding:20px 0;
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
 }
 
-nav ul li a{
+nav ul li a {
   color: #1d1d24;
   position: relative;
   padding: 5px 0;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   color: #fd4766;
 }
-nav ul li a:after{
+nav ul li a:after {
   content: "";
   position: absolute;
   left: 0;
   width: 0;
   height: 3px;
   background: #fd4766;
-  transition: .3s;
+  transition: 0.3s;
   bottom: 0;
 }
-nav ul li a:hover:after{
+nav ul li a:hover:after {
   width: 100%;
 }
 
-.logo{
-    width: 160px;
+.logo {
+  width: 160px;
 }
 
-nav ul li{
-    display: inline-block ;
-    list-style: none;
-    margin: 10px 30px;
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 30px;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration:double;
-} 
-
-.me h1{
-  font-size: 500% ;
-  margin-top: 15%;
-}
-
-.me button{
-  background: #393939;
-  border: 0;
-  outline:none; 
-  padding: 15px 35px;
   color: #fff;
-  margin-top: 25px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  cursor:pointer;
+  text-decoration: double;
 }
 
-.round span{
+.me h1 {
+  font-size: 500%;
+  margin-top: 15%;
+  margin-bottom: 20px;
+}
+
+.me h1 span {
+  color: #fd4766;
+}
+
+.me button {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.me button:hover {
+  background: transparent;
+  border-color: #fd4766;
+  color: #fd4766;
+}
+
+.round span {
   display: inline-block;
   background: #234;
   height: 15px;
@@ -85,18 +98,18 @@ nav ul li a {
   border-radius: 50%;
   margin-right: 10px;
 }
-.round{
+.round {
   margin-top: 100px;
-} 
+}
 
-.round span.active{
+.round span.active {
   background: #fff;
 }
 
-.life{
+.life {
   position: absolute;
   width: 25px;
-  min-width:250px ;
+  min-width: 250px;
   right: 8%;
   bottom: 100px;
 }
