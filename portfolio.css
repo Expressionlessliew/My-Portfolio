@@ -12,10 +12,11 @@ a {
 
 .navbar {
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index: 1;
 }
 
 .navbar nav {
@@ -31,12 +32,12 @@ a {
   padding: 10px 20px;
 }
 .navbar nav ul li a {
-  color: white;
+  color: rgb(255, 0, 0);
   position: relative;
   padding: 5px 0;
 }
 .navbar nav ul li a:hover {
-  color: #fd4766;
+  color: #47c0fd;
 }
 .navbar nav ul li a:after {
   content: "";
@@ -44,7 +45,7 @@ a {
   left: 0;
   width: 0;
   height: 3px;
-  background: #fd4766;
+  background: #f747fd;
   transition: 0.3s;
   bottom: 0;
 }
@@ -119,9 +120,37 @@ a {
   min-height: 100vh;
   width: 100%;
   background-color: black;
+  background-image: url(https://i.pinimg.com/originals/1e/0e/e9/1e0ee93dfd57a4fb52b584e7dc87cd30.gif);
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
-  padding: 0 8%;
+}
 
+.img img {
+  transition: 50s;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  float: right;
+}
+
+.img p {
+  color: rgb(255, 0, 0);
+  font-size: 30px;
+  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+}
+
+.pic img {
+  transition: 100s;
+  border-radius: 50%;
+  width: 260px;
+  height: 260px;
+  float: right;
+}
+
+.pic p {
+  margin: 20% 0 0 0;
+  color: rgb(16, 12, 12);
+  font-size: 30px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
