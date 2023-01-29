@@ -1,5 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #4756df;
+  --secondary-color: #ff7235;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,13 +26,17 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   overflow: hidden;
   background-color: rgb(0, 0, 0);
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
-  z-index: 1;
+  z-index: 100000000000000;
 }
 
 .navbar nav {
@@ -120,13 +140,42 @@ a {
   min-height: 100vh;
   width: 100%;
   background-color: black;
-  background-image: url(https://i.pinimg.com/originals/1e/0e/e9/1e0ee93dfd57a4fb52b584e7dc87cd30.gif);
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5_chnEhUTIbOv4IiPLmCDEcYthzPFw56hDQ&usqp=CAU);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.img img {
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
+}
+
+.bio {
+  width: 25rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+}
+
+/* .img img {
   transition: 50s;
   border-radius: 50%;
   width: 260px;
@@ -153,4 +202,14 @@ a {
   color: rgb(16, 12, 12);
   font-size: 30px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+} */
+
+.skills {
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+  background-image: url(https://cdn.pixabay.com/photo/2016/10/29/10/16/abstract-1780386_1280.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
