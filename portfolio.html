@@ -12,7 +12,7 @@
         <ul>
           <li><a href="#Home">Home</a></li>
           <li><a href="#About">About</a></li>
-          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#Contact">Contact</a></li>
         </ul>
       </nav>
@@ -35,48 +35,152 @@
 
     <!-- About -->
     <div id="About" class="hero">
-      <img
-        src="red panda.png"
-        alt="jane-doe"
-        loading="lazy"
-        class="hero-img"
-      />      
-      <div class="bio animate__animated animate__shakeX">
-                
-        <h2 class="bio-title">About Me</h2>
-                
-        <p class="bio-text">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Mollitia sed           dolorem fugit sapiente porro veniam pariatur
-          dolore nostrum delectus           inventore tempore minus nemo, iste
-          ullam illo laboriosam maiores           repudiandae quos!         
-        </p>
-      </div>
-
-      <!-- <div class="img">
-        <p>
-          <img src="src/img/Studying.jpg" alt="books" />Lorem ipsum dolor sit
-          amet consectetur adipisicing elit. A culpa sapiente ab minus velit
-          sint consequuntur. Incidunt, numquam ullam, distinctio ipsum eligendi,
-          voluptatem magni corporis dolorum laborum quaerat ipsa ea?
-          <img src="src/img/school.jpg" alt="school" />
-        </p>
-      </div>
-
-      <div class="pic">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil
-          dignissimos magnam nesciunt quas dolorem quia asperiores nam omnis?
-          Vel itaque recusandae aliquid qui consectetur eaque laborum!
-          Aspernatur veritatis fugiat consequatur.<img
-            src="src/img/home2.jpg"
-            alt="home"
-          />
-        </p>
-      </div> -->
+      <img src="red panda.png" alt="jane-doe" loading="lazy" class="hero-img" />
+      
+        <div class="bio animate__animated animate__shakeX">
+          <h2 class="bio-title">About Me</h2>
+          <p class="bio-text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
+            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
+            inventore  minus nemo, iste ullam illo laboriosam maiores
+            repudiandae quos! Lorem ipsum sit amet consectetur adipisicing elit. Molestiae
+            soluta dolore? Eveniet placeat vel accusantium iure nesciunt explicabo, dolor
+             ex iusto veritatis rerum, optio voluptas esse blanditiis eos at.
+          </p>
+        </div>
+        <div >  
+          <a href="#" class="btn1">school</a>
+          <a href="#" class="btn2">home</a>
+          <a href="#" class="btn3">hobby</a>
+        </div>
+  </section>
     </div>
 
     <!--Skills-->
-    <div id="Skills" class="skills"></div>
+    <section class="skills" id="skills">
+      <h2 class="skill-header">My Top Skills</h2>
+
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img
+            src="html-1.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="CSS.svg"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+          <img
+            src="JS.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+            />
+          </div>
+  
+          <div class="second-set animate__animated animate__pulse">
+            <img
+              src="RASBERRY.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="Python_logo_01.svg.png"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+            src="Microbit.png"
+            alt=""
+            loading="lazy"
+            class="icon icon-card"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <h2>Get In Touch With Me</h2>
+      <div class="contact-form-container">
+        <div class="contact-form">
+          <form action="https://formspree.io/f/xyylngw" method="POST">
+            <div class="form-control">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="sender-name"
+                placeholder="Enter Your Name"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="sender-email"
+                placeholder="Enter Your Email"
+                class="input-field"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                cols="60"
+                rows="10"
+                placeholder="Enter Your Message"
+                name="message"
+                class="input-field"
+                required
+              ></textarea>
+            </div>
+            <input
+              type="submit"
+              value="Submit"
+              id="submit-btn"
+              class="submit-btn"
+            />
+          </form>
+        </div>
+      </div>
+    </section>
+    
+     <!-- socials -->
+    <div class="socials">
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-twitter-circled.gif"
+          alt="Twitter"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-instagram.gif"
+          alt="Instagram"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img
+          src="assets/icons/icons8-linkedin-circled.gif"
+          alt="Linkedin"
+          loading="lazy"
+          class="socicon"
+      /></a>
+      <a href="#" target="_blank"
+        ><img src="assets/icons/icons8-github.gif" alt="Github" class="socicon"
+      /></a>
   </body>
 </html>

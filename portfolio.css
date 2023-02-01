@@ -74,7 +74,7 @@ html {
 }
 
 .home {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-color: black;
   background-image: url(https://i.gifer.com/82em.gif);
@@ -135,17 +135,7 @@ html {
   margin-top: 25px;
   margin-bottom: 30px;
 }
-
-.about {
-  min-height: 100vh;
-  width: 100%;
-  background-color: black;
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5_chnEhUTIbOv4IiPLmCDEcYthzPFw56hDQ&usqp=CAU);
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
+/* about section */
 .hero {
   display: flex;
   align-items: center;
@@ -153,10 +143,20 @@ html {
   gap: 2.5rem;
   max-width: 68.75rem;
   margin: auto;
+  height: 100vh;
+  color: #fcfcfc;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  background-image: url(https://i.pinimg.com/originals/04/65/8e/04658e1a724c1830587bf1e33930a339.gif); 
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+
 }
 .hero img {
-  height: 37.5rem;
-  width: 37.5rem;
+  height: 500px;
+  width: 500px;
 }
 
 .bio {
@@ -173,43 +173,162 @@ html {
 .bio p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
+} 
+
+.btn1 {
+  color: rgb(3, 0, 0);
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding:  16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.5s ease-in-out;
+  background-size: 152% 100%;
+  background: #fd4766;
+  border: 2px solid #fd4766;
+}
+.btn1:hover {
+  background: white;
+  border-color: #00d5ff;
+  color: #6f00f8;
 }
 
-/* .img img {
-  transition: 50s;
-  border-radius: 50%;
-  width: 260px;
-  height: 260px;
-  float: right;
+.btn2 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #fda847;
+  border: 2px solid #6bfd47;
+}
+.btn2:hover {
+  background: black;
+  border-color: #fdf447;
+  color: #fd4766;
 }
 
-.img p {
-  color: rgb(255, 0, 0);
-  font-size: 30px;
-  font-family: Gill Sans, Gill Sans MT, Calibri, Trebuchet MS, sans-serif;
+.btn3 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 16px 40px;
+  border-radius: 500px;
+  display: inline-block;
+  font-weight: 500;
+  transition: all 0.4s ease-in-out;
+  background-size: 152% 100%;
+  background: #4765fd;
+  border: 2px solid #47fd72;
+}
+.btn3:hover {
+  background: orange;
+  border-color: #fd476500;
+  color: #fd4766;
 }
 
-.pic img {
-  transition: 100s;
-  border-radius: 50%;
-  width: 260px;
-  height: 260px;
-  float: right;
-}
-
-.pic p {
-  margin: 20% 0 0 0;
-  color: rgb(16, 12, 12);
-  font-size: 30px;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-} */
-
+/* Skills */
 .skills {
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   background-color: black;
   background-image: url(https://cdn.pixabay.com/photo/2016/10/29/10/16/abstract-1780386_1280.png);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.skills {
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skill-header {
+  margin-bottom: 1rem;
+}
+
+.skills-wrapper img {
+  padding: 1.25rem;
+}
+
+.icon {
+  width: 11.875rem;
+  height: 11.25rem;
+}
+.icon-card {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.contact {
+  margin-top: 2rem;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: var(--bottom-margin-2);
+}
+
+.contact-form-container {
+  max-width: 40.75rem;
+  margin: 0 auto;
+  padding: 0.938rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px var(--secondary-shadow);
+}
+.contact-form-container label {
+  line-height: 2.7em;
+  font-weight: var(--bold-font);
+  color: var(--primary-color);
+}
+
+.contact-form-container textarea {
+  min-height: 6.25rem;
+  font-size: 14px;
+}
+
+.contact-form-container .input-field {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border: none;
+  border: 2px outset var(--primary-color);
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.input-field::placeholder {
+  padding: 0.5rem;
+  color: var(--primary-color);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #fff;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--bold-font);
+  transition: var(--transition);
+}
+.submit-btn:hover {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  cursor: pointer;
 }
