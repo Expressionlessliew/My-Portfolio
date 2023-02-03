@@ -21,6 +21,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  
 }
 a {
   text-decoration: none;
@@ -238,27 +239,27 @@ html {
 .skills {
   height: 100vh;
   width: 100%;
-  background-color: black;
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+  background-color: #000;
   background-image: url(https://i.pinimg.com/originals/2a/a7/8a/2aa78a2c8fbe91b37bfed0fbb32fae82.jpg);
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-.skills {
-  max-width: 68.75rem;
-  margin: auto;
-  text-align: center;
-  margin-top: 2.5rem;
-}
 
 .skill-header {
   margin-bottom: 1rem;
   color: #fcfcfc;
+  background-color: black;
 }
 
 .skills-wrapper img {
   padding: 1.25rem;
+  background-color: black;
 }
 
 .icon {
@@ -273,6 +274,7 @@ html {
   margin: 10px;
 }
 
+/* projects */
 .projects {
   background-image: url(https://i.ytimg.com/vi/8GO5dyIiff4/maxresdefault.jpg);
   padding: 32px 0;
@@ -391,4 +393,16 @@ html {
 .socicon {
   width: 40px;
   height: 40px;
+}
+
+.scroll-up {
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
 }
