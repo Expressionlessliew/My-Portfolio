@@ -1,130 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Portfolio</title>
-    <link href="portfolio.css" rel="stylesheet" />
-  </head>
-  <body>
-    <!-- Navbar -->
-    <div class="navbar">
-      <nav>
-        <img src="logo.png" class="logo" />
-        <ul>
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Project</a></li>
-          <li><a href="#socials">Socials</a></li>
-        </ul>
-      </nav>
-    </div>
 
-    <!-- Home -->
-    <div id="Home" class="home">
-      <div class="content">
-        <span class="title">Freelance Web Developer</span>
-        <h1>Hello, I’m <span>Name</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque
-          assumenda expedita minus inventore ad ab harum amet voluptatibus,
-          nulla libero magni fugiat tenetur aspernatur obcaecati repellat vitae
-          rem ex.
-        </p>
-        <a href="#" class="btn">fake resume</a>
-      </div>
-    </div>
+<head>
+  <title>My Portfolio</title>
+  <link href="portfolio.css" rel="stylesheet" />
+</head>
 
-    <!-- About -->
-    <div id="About" class="hero">
-      <img src="red panda.png" alt="jane-doe" loading="lazy" class="hero-img" />
-      
-        <div class="bio animate__animated animate__shakeX">
-          <h2 class="bio-title">About Me</h2>
-          <p class="bio-text">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sed
-            dolorem fugit sapiente porro veniam pariatur dolore nostrum delectus
-            inventore  minus nemo, iste ullam illo laboriosam maiores
-            repudiandae quos! Lorem ipsum sit amet consectetur adipisicing elit. Molestiae
-            soluta dolore? Eveniet placeat vel accusantium iure nesciunt explicabo, dolor
-             ex iusto veritatis rerum, optio voluptas esse blanditiis eos at.
-          </p>
-        </div>
-        <div >  
-          <a href="school.html" class="btn1">school</a>
-          <a href="#" class="btn2">home</a>
-          <a href="#" class="btn3">hobby</a>
-        </div>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Project</a></li>
+      <li><a href="#socials">Socials</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home -->
+  <section id="home">
+    <div class="main">
+      <span class="headings">
+        <h1 class="title">Freelance Web Developer</h1>
+        <h1 class="intro">Hello, I’m <span class="name">Xin Yi</span></h1>
+      </span>
+      <button class="btn">Hire me</button>
+    </div>
   </section>
-    </div>
 
-    <!--Skills-->
-    <section class="skills" id="skills">
-      <h2 class="skill-header">My Top Skills</h2>
-
-      <div class="skills-wrapper">
-        <div class="first-set animate__animated animate__pulse">
-          <img
-            src="html-1.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="CSS.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-          <img
-            src="JS.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-            />
-          </div>
-  
-          <div class="second-set animate__animated animate__pulse">
-            <img
-              src="RASBERRY.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="Python_logo_01.svg.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-            src="Microbit.png"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-        </div>
+  <!-- About -->
+  <section id="about">
+    <h1 class="headings2">ABOUT ME</h1>
+    <div id="pic">
+      <img src="red panda.png" alt="" />
+      <div id="intro">
+        <h2>XIN YI</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
+          molestias cumque ipsum natus impedit accusantium vel itaque cum
+          accusamus magnam veritatis quidem expedita dolor, in tenetur
+          quibusdam assumenda fugiat dignissimos quo! Est dolores suscipit vel
+          delectus eos exercitationem nihil natus dolor. Veritatis nemo illo
+          labore vero earum delectus molestiae nisi nobis libero odit atque
+          maxime excepturi facere dignissimos, quisquam praesentium saepe
+          eveniet accusantium pariatur non laudantium laboriosam! Vitae
+          veritatis quo sit, minima libero, dolorem illum nostrum aut aperiam
+          laudantium est culpa laborum debitis error sunt maiores, quam
+          eligendi! Provident impedit possimus quaerat minus quo ipsa culpa,
+          iusto iure corrupti porro.
+        </p>
       </div>
-    </section>
-<!-- Projects -->
-    <section class="projects" id="projects">
-      <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container">
-        <div class="project-container project-card">
-          <img
-            src="my food menu.png"
-            alt="food menu"
-            loading="lazy"
-            class="project-pic"
-          />
-          <h3 class="project-title">My Food Menu</h3>
-          <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
-          </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
-        </div>
-        </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h1 class="headings">MY TOP SKILLS</h1>
+    <div class="gallery">
+      <img src="html-1.svg" alt="" />
+      <img src="CSS.svg" alt="" />
+      <img src="JS.png" alt="" />
+      <img src="RASBERRY.png" alt="" />
+      <img src="Python_logo_01.svg.png" alt="" />
+      <img src="Microbit.png" alt="" />
+    </div>
+  </section>
+
+
+  <!-- <div>
+    <a href="school.html" class="btn1">school</a>
+    <a href="#" class="btn2">home</a>
+    <a href="#" class="btn3">hobby</a>
+  </div>
+  </div>
+   -->
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+      <div class="project-container project-card">
+        <img src="my food menu.png" alt="food menu" loading="lazy" class="project-pic" />
+        <h3 class="project-title">My Food Menu</h3>
+        <p class="project-details">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
+          ratione vel inventore labore commodi modi quos culpa aut saepe!
+          Alias!
+        </p>
+        <a href="#" target="_blank" class="project-link">Check it Out</a>
+      </div>
+    </div>
 
     <!-- contact -->
     <section class="contact" id="contact">
@@ -134,75 +101,33 @@
           <form action="https://formspree.io/f/xyylngw" method="POST">
             <div class="form-control">
               <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="sender-name"
-                placeholder="Enter Your Name"
-                class="input-field"
-                required
-              />
+              <input type="text" id="name" name="sender-name" placeholder="Enter Your Name" class="input-field"
+                required />
             </div>
             <div class="form-control">
               <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="sender-email"
-                placeholder="Enter Your Email"
-                class="input-field"
-                required
-              />
+              <input type="email" id="email" name="sender-email" placeholder="Enter Your Email" class="input-field"
+                required />
             </div>
             <div class="form-control">
               <label for="message">Message</label>
-              <textarea
-                id="message"
-                cols="60"
-                rows="10"
-                placeholder="Enter Your Message"
-                name="message"
-                class="input-field"
-                required
-              ></textarea>
+              <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message" name="message"
+                class="input-field" required></textarea>
             </div>
-            <input
-              type="submit"
-              value="Submit"
-              id="submit-btn"
-              class="submit-btn"
-            />
+            <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
           </form>
         </div>
       </div>
     </section>
-    
-     <!-- socials -->
-    <div class="socials">
-      <a href="#" target="_blank"
-        ><img
-          src="twitter.png"
-          alt="Twitter"
-          loading="lazy"
-          class="socicon"
-      /></a>
-      <a href="#" target="_blank"
-        ><img
-          src="intsagram.gif"
-          alt="Instagram"
-          loading="lazy"
-          class="socicon"
-      /></a>
 
-      <a href="#" target="_blank"
-        ><img src="git.gif" alt="Github" class="socicon"
-      /></a>
-      <i class="scroll-up" id="scroll-up"
-      ><img
-        src="arrow.gif"
-        class="socicon up-arrow"
-        alt="scroll-up"
-    /></i>
-  </footer>
-  </body>
+    <!-- socials -->
+    <div class="socials">
+      <a href="#" target="_blank"><img src="twitter.png" alt="Twitter" loading="lazy" class="socicon" /></a>
+      <a href="#" target="_blank"><img src="intsagram.gif" alt="Instagram" loading="lazy" class="socicon" /></a>
+
+      <a href="#" target="_blank"><img src="git.gif" alt="Github" class="socicon" /></a>
+      <i class="scroll-up" id="scroll-up"><img src="arrow.gif" class="socicon up-arrow" alt="scroll-up" /></i>
+      </footer>
+</body>
+
 </html>
