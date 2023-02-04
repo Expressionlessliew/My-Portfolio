@@ -25,7 +25,6 @@ html {
   position: sticky;
   top: 0;
   z-index: 1000;
-
 }
 
 .navbar ul {
@@ -177,7 +176,7 @@ html {
 }
 
 /* Skills */
-#skills{
+#skills {
   display: flex;
   flex-direction: column;
   background-color: black;
@@ -185,10 +184,9 @@ html {
   align-items: center;
   padding: 20px;
   height: 100vh;
-
 }
 
-.gallery{
+.gallery {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 4.5rem;
@@ -196,14 +194,14 @@ html {
   box-sizing: border-box;
 }
 
-.gallery img{
+.gallery img {
   width: 180px;
   height: 180px;
   margin: 10px;
-  transition: transform .5s ease;
+  transition: transform 0.5s ease;
 }
 
-.gallery img:hover{
+.gallery img:hover {
   transform: scale(1.2);
 }
 
@@ -318,19 +316,6 @@ html {
   cursor: pointer;
 }
 
-.socials {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 1%;
-  bottom: 50%;
-}
-
-.socicon {
-  width: 40px;
-  height: 40px;
-}
-
 .scroll-up {
   position: fixed;
   right: 0.5%;
@@ -341,4 +326,44 @@ html {
 .up-arrow {
   width: 3rem;
   height: 3rem;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.github {
+  background: #bb0000;
+  color: white;
 }
