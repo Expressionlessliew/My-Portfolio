@@ -302,7 +302,7 @@ html {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color: #fff;
+  background-color:#fff;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -311,7 +311,7 @@ html {
 }
 
 .submit-btn:hover {
-  background-color: var(--primary-color);
+  background-color: blueviolet ;
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
@@ -348,7 +348,7 @@ html {
 
 /* Style the social media icons with color, if you want */
 .icon-bar a:hover {
-  background-color: #000;
+  background-color: blueviolet;
 }
 
 .twitter {
