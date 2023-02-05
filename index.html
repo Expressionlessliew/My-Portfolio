@@ -8,9 +8,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
+
+  <div id="loader"></div>
 
   <!-- Navbar -->
+  <div style="display:none;" id="myDiv" class="animate-bottom">
   <nav class="navbar">
     <ul>
       <li><a href="#home">Home</a></li>
@@ -132,6 +135,22 @@
     <i class="scroll-up" id="scroll-up"><img src="assets/arrow.gif" class="socicon up-arrow" alt="scroll-up" /></i>
 
     <script src="Portfolio.js" rel="script"></script>
+
+  </div>
+
+  <script>
+    var myVar;
+    
+    function myFunction() {
+      myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+    
 </body>
 
 </html>
