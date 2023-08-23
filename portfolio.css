@@ -207,9 +207,8 @@ html {
 
 /* projects */
 .projects {
-  background-image: url(https://i.ytimg.com/vi/8GO5dyIiff4/maxresdefault.jpg);
+  background-color: black;
   padding: 32px 0;
-  margin-top: 2rem;
 }
 
 .project-pic {
@@ -221,9 +220,11 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .projects-title {
+  color: white;
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -254,7 +255,81 @@ html {
   margin: 10px;
 }
 
+.project-pic {
+  width: 65%;
+  height: 60%;
+}
+
+.projects-container2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.projects-title2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container2 p {
+  padding: 0.4rem;
+}
+
+.project-title2 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details2 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-card2 {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+.project-card3 {
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding: 20px;
+  margin: 10px;
+}
+
+
+.projects-container3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.projects-title3 {
+  color: white;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.project-container3 p {
+  padding: 0.4rem;
+}
+
+.project-title3 {
+  margin-bottom: var(--bottom-margin);
+}
+
+.project-details3 {
+  margin-bottom: var(--bottom-margin);
+}
+
+
 .contact {
+  color: white;
   margin-top: 2rem;
 }
 
@@ -302,7 +377,7 @@ html {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
-  background-color:#fff;
+  background-color: #fff;
   border: 2px solid var(--primary-color);
   border-radius: 5px;
   font-size: 1rem;
@@ -311,7 +386,7 @@ html {
 }
 
 .submit-btn:hover {
-  background-color: blueviolet ;
+  background-color: blueviolet;
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
@@ -366,7 +441,6 @@ html {
   color: white;
 }
 
-
 #loader {
   position: fixed;
   top: 0;
@@ -378,7 +452,7 @@ html {
   background: black;
 }
 
-#loader::before{
+#loader::before {
   content: "";
   position: fixed;
   top: calc(50% - 30px);
@@ -391,7 +465,6 @@ html {
   height: 100px;
   -webkit-animation: animate-preloader 1s linear infinite;
   animation: animate-preloader 1s linear infinite;
-
 }
 
 @-webkit-keyframes animate-preloader {
@@ -417,17 +490,29 @@ html {
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
-  animation-duration: 1s
+  animation-duration: 1s;
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
 
 #myDiv {
